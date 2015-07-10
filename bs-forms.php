@@ -64,34 +64,32 @@ class BS_Form {
 	 *
 	 * Takes an array of args:
 	 *
-	 	Form_Display::text(
-			array(
-				'name' => 'field_name',
-				'id' => 'field_id',
-				'label' => 'field_label',
-				'label_attrs' => array( // add an additional class or id to the field label
-					'class' => 'label_class',
-					'id' => 'label_id',
-				),
-				'form_group' => array( // add an additional class or id to form group
-					'id' 	=> 'form_group_id',
-					'class' => 	'form_group_class',
-				),
-				'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
-					'id' => 'wrapper_id',
-					'class' => 'wrapper_class'
-				),
-				'prepend' => '$',
-				'append' => '.00',
-				'max_length' => 100,
-				'placeholder' => 'Enter value here...',
-				'data_attr' => array( // add data-attributes if needed
-					array( 'attr' => 'data-id', 'value' => 'attr-id' ),
-					array( 'attr' => 'data-name', 'value' => 'attr-name' ),
-				),
-				'error_block' => 'please make sure to blah blah blah',
-				'echo ' => true // if false then returns the field
-			)
+		array(
+			'name' => 'field_name',
+			'id' => 'field_id',
+			'label' => 'field_label',
+			'label_attrs' => array( // add an additional class or id to the field label
+				'class' => 'label_class',
+				'id' => 'label_id',
+			),
+			'form_group' => array( // add an additional class or id to form group
+				'id' 	=> 'form_group_id',
+				'class' => 	'form_group_class',
+			),
+			'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
+				'id' => 'wrapper_id',
+				'class' => 'wrapper_class'
+			),
+			'prepend' => '$',
+			'append' => '.00',
+			'max_length' => 100,
+			'placeholder' => 'Enter value here...',
+			'data_attr' => array( // add data-attributes if needed
+				array( 'attr' => 'data-id', 'value' => 'attr-id' ),
+				array( 'attr' => 'data-name', 'value' => 'attr-name' ),
+			),
+			'error_block' => 'please make sure to blah blah blah',
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -160,34 +158,32 @@ class BS_Form {
 	 *
 	 * Takes an array of args:
 	 *
-	 	Form_Display::password(
-			array(
-				'name' => 'field_name',
-				'id' => 'field_id',
-				'label' => 'field_label',
-				'label_attrs' => array( // add an additional class or id to the field label
-					'class' => 'label_class',
-					'id' => 'label_id',
-				),
-				'form_group' => array( // add an additional class or id to form group
-					'id' 	=> 'form_group_id',
-					'class' => 	'form_group_class',
-				),
-				'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
-					'id' => 'wrapper_id',
-					'class' => 'wrapper_class'
-				),
-				'prepend' => '$',
-				'append' => '.00',
-				'max_length' => 100,
-				'placeholder' => 'Enter value here...',
-				'data_attr' => array( // add data-attributes if needed
-					array( 'attr' => 'data-id', 'value' => 'attr-id' ),
-					array( 'attr' => 'data-name', 'value' => 'attr-name' ),
-				),
-				'help_block' => 'make sure to blah blah blah',
-				'echo ' => true // if false then returns the field
-			)
+		array(
+			'name' => 'field_name',
+			'id' => 'field_id',
+			'label' => 'field_label',
+			'label_attrs' => array( // add an additional class or id to the field label
+				'class' => 'label_class',
+				'id' => 'label_id',
+			),
+			'form_group' => array( // add an additional class or id to form group
+				'id' 	=> 'form_group_id',
+				'class' => 	'form_group_class',
+			),
+			'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
+				'id' => 'wrapper_id',
+				'class' => 'wrapper_class'
+			),
+			'prepend' => '$',
+			'append' => '.00',
+			'max_length' => 100,
+			'placeholder' => 'Enter value here...',
+			'data_attr' => array( // add data-attributes if needed
+				array( 'attr' => 'data-id', 'value' => 'attr-id' ),
+				array( 'attr' => 'data-name', 'value' => 'attr-name' ),
+			),
+			'help_block' => 'make sure to blah blah blah',
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -208,31 +204,29 @@ class BS_Form {
 	 *
 	 * Takes an array of args:
 	 *
-	 	Form_Display::textarea(
-			array(
-				'name' => 'field_name',
-				'id' => 'field_id',
-				'label' => 'field_label',
-				'label_attrs' => array( // add an additional class or id to the field label
-					'class' => 'label_class',
-					'id' => 'label_id',
-				),
-				'form_group' => array( // add an additional class or id to form group
-					'id' 	=> 'form_group_id',
-					'class' => 	'form_group_class',
-				),
-				'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
-					'id' => 'wrapper_id',
-					'class' => 'wrapper_class'
-				),
-				'max_length' => 100,
-				'data_attr' => array( // add data-attributes if needed
-					array( 'attr' => 'data-id', 'value' => 'attr-id' ),
-					array( 'attr' => 'data-name', 'value' => 'attr-name ),
-				),
-				'help_block' => 'make sure to blah blah blah',
-				'echo ' => true // if false then returns the field
-			)
+		array(
+			'name' => 'field_name',
+			'id' => 'field_id',
+			'label' => 'field_label',
+			'label_attrs' => array( // add an additional class or id to the field label
+				'class' => 'label_class',
+				'id' => 'label_id',
+			),
+			'form_group' => array( // add an additional class or id to form group
+				'id' 	=> 'form_group_id',
+				'class' => 	'form_group_class',
+			),
+			'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
+				'id' => 'wrapper_id',
+				'class' => 'wrapper_class'
+			),
+			'max_length' => 100,
+			'data_attr' => array( // add data-attributes if needed
+				array( 'attr' => 'data-id', 'value' => 'attr-id' ),
+				array( 'attr' => 'data-name', 'value' => 'attr-name ),
+			),
+			'help_block' => 'make sure to blah blah blah',
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -292,37 +286,35 @@ class BS_Form {
 	 *
 	 * Takes an array of args:
 	 *
-	 	Form_Display::select(
-			array(
-				'name' => 'field_name',
-				'id' => 'field_id',
-				'options' => array(
-					array( 'id' => option_id', 'value' => 'option_value' ),
-					array( 'id' => option_id', 'value' => 'option_value' )
-				),
-				'value' => 'field_value' // if there is a value, it will be compared with options to determine selected
-				'label' => 'field_label',
-				'label_attrs' => array( // add an additional class or id to the field label
-					'class' => 'label_class',
-					'id' => 'label_id',
-				),
-				'form_group' => array( // add an additional class or id to form group
-					'id' 	=> 'form_group_id',
-					'class' => 	'form_group_class',
-				),
-				'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
-					'id' => 'wrapper_id',
-					'class' => 'wrapper_class'
-				),
-				'prepend' => '$',
-				'append' => '.00',
-				'data_attr' => array( // add data-attributes if needed
-					array( 'attr' => 'data-id', 'value' => 'attr-id' ),
-					array( 'attr' => 'data-name', 'value' => 'attr-name ),
-				),
-				'help_block' => 'make sure to blah blah blah',
-				'echo ' => true // if false then returns the field
-			)
+		array(
+			'name' => 'field_name',
+			'id' => 'field_id',
+			'options' => array(
+				array( 'id' => option_id', 'value' => 'option_value' ),
+				array( 'id' => option_id', 'value' => 'option_value' )
+			),
+			'value' => 'field_value' // if there is a value, it will be compared with options to determine selected
+			'label' => 'field_label',
+			'label_attrs' => array( // add an additional class or id to the field label
+				'class' => 'label_class',
+				'id' => 'label_id',
+			),
+			'form_group' => array( // add an additional class or id to form group
+				'id' 	=> 'form_group_id',
+				'class' => 	'form_group_class',
+			),
+			'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
+				'id' => 'wrapper_id',
+				'class' => 'wrapper_class'
+			),
+			'prepend' => '$',
+			'append' => '.00',
+			'data_attr' => array( // add data-attributes if needed
+				array( 'attr' => 'data-id', 'value' => 'attr-id' ),
+				array( 'attr' => 'data-name', 'value' => 'attr-name' ),
+			),
+			'help_block' => 'make sure to blah blah blah',
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -358,7 +350,8 @@ class BS_Form {
 		if ( !empty( $args['options'] ) ) {
 			foreach ( $args['options'] as $option ) {
 				$selected = ( $option['value'] == $args['value'] ) ? ' selected="selected"' : '';
-				$select .= '<option value="' . $option['value'] . '"' . $selected . '>';
+				$disabled = ( !empty( $option['disabled'] ) && ( $option['disabled'] === true ) ) ? ' disabled="disabled"' : '';
+				$select .= '<option value="' . $option['value'] . '"' . $selected . $disabled . '>';
 				$select .= $option['label'];
 				$select .= '</option>';
 			}
@@ -383,35 +376,33 @@ class BS_Form {
 	 *
 	 * Takes an array of args:
 	 *
-	 	Form_Display::radio(
-			array(
-				'name' => 'field_name',
-				'id' => 'field_id',
-				'options' => array(
-					array( 'id' => option_id', 'value' => 'option_value' ),
-					array( 'id' => option_id', 'value' => 'option_value' )
-				),
-				'value' => 'field_value' // if there is a value, it will be compared with options to determine selected
-				'label' => 'field_label',
-				'label_attrs' => array( // add an additional class or id to the field label
-					'class' => 'label_class',
-					'id' => 'label_id',
-				),
-				'form_group' => array( // add an additional class or id to form group
-					'id' 	=> 'form_group_id',
-					'class' => 	'form_group_class',
-				),
-				'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
-					'id' => 'wrapper_id',
-					'class' => 'wrapper_class'
-				),
-				'data_attr' => array( // add data-attributes if needed
-					array( 'attr' => 'data-id', 'value' => 'attr-id' ),
-					array( 'attr' => 'data-name', 'value' => 'attr-name ),
-				),
-				'help_block' => 'make sure to blah blah blah',
-				'echo ' => true // if false then returns the field
-			)
+		array(
+			'name' => 'field_name',
+			'id' => 'field_id',
+			'options' => array(
+				array( 'id' => 'option_id', 'value' => 'option_value', 'disabled' => true/false ),
+				array( 'id' => 'option_id', 'value' => 'option_value' )
+			),
+			'value' => 'field_value', // if there is a value, it will be compared with options to determine selected
+			'label' => 'field_label',
+			'label_attrs' => array( // add an additional class or id to the field label
+				'class' => 'label_class',
+				'id' => 'label_id',
+			),
+			'form_group' => array( // add an additional class or id to form group
+				'id' 	=> 'form_group_id',
+				'class' => 	'form_group_class'
+			),
+			'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
+				'id' => 'wrapper_id',
+				'class' => 'wrapper_class'
+			),
+			'data_attr' => array( // add data-attributes if needed
+				array( 'attr' => 'data-id', 'value' => 'attr-id' ),
+				array( 'attr' => 'data-name', 'value' => 'attr-name' )
+			),
+			'help_block' => 'make sure to blah blah blah',
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -455,35 +446,33 @@ class BS_Form {
 	 *
 	 * Takes an array of args:
 	 *
-	 	Form_Display::checkbox(
-			array(
-				'name' => 'field_name',
-				'id' => 'field_id',
-				'options' => array(
-					array( 'id' => option_id', 'value' => 'option_value', 'disabled' => true/false ),
-					array( 'id' => option_id', 'value' => 'option_value' )
-				),
-				'value' => 'field_value' // if there is a value, it will be compared with options to determine selected
-				'label' => 'field_label',
-				'label_attrs' => array( // add an additional class or id to the field label
-					'class' => 'label_class',
-					'id' => 'label_id',
-				),
-				'form_group' => array( // add an additional class or id to form group
-					'id' 	=> 'form_group_id',
-					'class' => 	'form_group_class',
-				),
-				'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
-					'id' => 'wrapper_id',
-					'class' => 'wrapper_class'
-				),
-				'data_attr' => array( // add data-attributes if needed
-					array( 'attr' => 'data-id', 'value' => 'attr-id' ),
-					array( 'attr' => 'data-name', 'value' => 'attr-name ),
-				),
-				'help_block' => 'make sure to blah blah blah',
-				'echo ' => true // if false then returns the field
-			)
+		array(
+			'name' => 'field_name',
+			'id' => 'field_id',
+			'options' => array(
+				array( 'id' => 'option_id', 'value' => 'option_value', 'disabled' => true/false ),
+				array( 'id' => 'option_id', 'value' => 'option_value' )
+			),
+			'value' => 'field_value' // if there is a value, it will be compared with options to determine selected
+			'label' => 'field_label',
+			'label_attrs' => array( // add an additional class or id to the field label
+				'class' => 'label_class',
+				'id' => 'label_id'
+			),
+			'form_group' => array( // add an additional class or id to form group
+				'id' 	=> 'form_group_id',
+				'class' => 	'form_group_class'
+			),
+			'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
+				'id' => 'wrapper_id',
+				'class' => 'wrapper_class'
+			),
+			'data_attr' => array( // add data-attributes if needed
+				array( 'attr' => 'data-id', 'value' => 'attr-id' ),
+				array( 'attr' => 'data-name', 'value' => 'attr-name' )
+			),
+			'help_block' => 'make sure to blah blah blah',
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
