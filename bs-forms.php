@@ -89,7 +89,7 @@ class BS_Form {
 				array( 'attr' => 'data-name', 'value' => 'attr-name' ),
 			),
 			'error_block' => 'please make sure to blah blah blah',
-			'echo ' => true // if false then returns the field
+			'echo' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -183,7 +183,7 @@ class BS_Form {
 				array( 'attr' => 'data-name', 'value' => 'attr-name' ),
 			),
 			'help_block' => 'make sure to blah blah blah',
-			'echo ' => true // if false then returns the field
+			'echo' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -226,7 +226,7 @@ class BS_Form {
 				array( 'attr' => 'data-name', 'value' => 'attr-name ),
 			),
 			'help_block' => 'make sure to blah blah blah',
-			'echo ' => true // if false then returns the field
+			'echo' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -290,8 +290,8 @@ class BS_Form {
 			'name' => 'field_name',
 			'id' => 'field_id',
 			'options' => array(
-				array( 'id' => option_id', 'value' => 'option_value' ),
-				array( 'id' => option_id', 'value' => 'option_value' )
+				array( 'id' => 'option_id', 'value' => 'option_value' ),
+				array( 'id' => 'option_id', 'value' => 'option_value' )
 			),
 			'value' => 'field_value' // if there is a value, it will be compared with options to determine selected
 			'label' => 'field_label',
@@ -301,7 +301,7 @@ class BS_Form {
 			),
 			'form_group' => array( // add an additional class or id to form group
 				'id' 	=> 'form_group_id',
-				'class' => 	'form_group_class',
+				'class' => 	'form_group_class'
 			),
 			'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
 				'id' => 'wrapper_id',
@@ -311,10 +311,10 @@ class BS_Form {
 			'append' => '.00',
 			'data_attr' => array( // add data-attributes if needed
 				array( 'attr' => 'data-id', 'value' => 'attr-id' ),
-				array( 'attr' => 'data-name', 'value' => 'attr-name' ),
+				array( 'attr' => 'data-name', 'value' => 'attr-name' )
 			),
 			'help_block' => 'make sure to blah blah blah',
-			'echo ' => true // if false then returns the field
+			'echo' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -402,7 +402,7 @@ class BS_Form {
 				array( 'attr' => 'data-name', 'value' => 'attr-name' )
 			),
 			'help_block' => 'make sure to blah blah blah',
-			'echo ' => true // if false then returns the field
+			'echo' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -472,7 +472,7 @@ class BS_Form {
 				array( 'attr' => 'data-name', 'value' => 'attr-name' )
 			),
 			'help_block' => 'make sure to blah blah blah',
-			'echo ' => true // if false then returns the field
+			'echo' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -521,7 +521,7 @@ class BS_Form {
 				'name' => 'field_name',
 				'id' => 'field_id',
 				'value' => 'field_value' // if there is a value, it will be compared with options to determine selected
-				'echo ' => true // if false then returns the field
+				'echo' => true // if false then returns the field
 			)
 		)
 	 * @author Matthew Price
@@ -553,7 +553,7 @@ class BS_Form {
 				'id' => 'field_id',
 				'class' => 'btn btn-default',
 				'display' => 'Submit' // if there is a value, it will be compared with options to determine selected
-				'echo ' => true // if false then returns the field
+				'echo' => true // if false then returns the field
 			)
 		)
 	 * @author Matthew Price
