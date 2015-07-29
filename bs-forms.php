@@ -89,7 +89,7 @@ class BS_Form {
 				array( 'attr' => 'data-name', 'value' => 'attr-name' ),
 			),
 			'error_block' => 'please make sure to blah blah blah',
-			'echo' => true // if false then returns the field
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -117,7 +117,9 @@ class BS_Form {
 		$input_text .= 'name="' . $args['name'] . '" ';
 		$input_text .= 'id="' . $args['id'] . '" ';
 		$input_text .= 'class="' . $args['class'] . '" ';
-		$input_text .= 'value="' . $args['value'] . '" ';
+		if ( !empty( $args['value'] ) ) {
+			$input_text .= 'value="' . $args['value'] . '" ';
+		}
 		if ( $placeholder ) {
 			$input_text .= 'placeholder="' . $args['placeholder'] . '" ';
 		}
@@ -183,7 +185,7 @@ class BS_Form {
 				array( 'attr' => 'data-name', 'value' => 'attr-name' ),
 			),
 			'help_block' => 'make sure to blah blah blah',
-			'echo' => true // if false then returns the field
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -226,7 +228,7 @@ class BS_Form {
 				array( 'attr' => 'data-name', 'value' => 'attr-name ),
 			),
 			'help_block' => 'make sure to blah blah blah',
-			'echo' => true // if false then returns the field
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -260,7 +262,7 @@ class BS_Form {
 			}
 
 		}
-		if ( $field_data ) {
+		if ( !empty( $field_data ) ) {
 			$textarea .= rtrim( $field_data );
 		}
 
@@ -301,7 +303,7 @@ class BS_Form {
 			),
 			'form_group' => array( // add an additional class or id to form group
 				'id' 	=> 'form_group_id',
-				'class' => 	'form_group_class'
+				'class' => 	'form_group_class',
 			),
 			'field_wrapper' => array( // add a wrapper around the field inside of the from group for specific css stuff
 				'id' => 'wrapper_id',
@@ -311,10 +313,10 @@ class BS_Form {
 			'append' => '.00',
 			'data_attr' => array( // add data-attributes if needed
 				array( 'attr' => 'data-id', 'value' => 'attr-id' ),
-				array( 'attr' => 'data-name', 'value' => 'attr-name' )
+				array( 'attr' => 'data-name', 'value' => 'attr-name' ),
 			),
 			'help_block' => 'make sure to blah blah blah',
-			'echo' => true // if false then returns the field
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -349,7 +351,11 @@ class BS_Form {
 
 		if ( !empty( $args['options'] ) ) {
 			foreach ( $args['options'] as $option ) {
-				$selected = ( $option['value'] == $args['value'] ) ? ' selected="selected"' : '';
+				if ( !empty( $args['value'] ) ) {
+					$selected = ( $option['value'] == $args['value'] ) ? ' selected="selected"' : '';
+				} else {
+					$selected = '';
+				}
 				$disabled = ( !empty( $option['disabled'] ) && ( $option['disabled'] === true ) ) ? ' disabled="disabled"' : '';
 				$select .= '<option value="' . $option['value'] . '"' . $selected . $disabled . '>';
 				$select .= $option['label'];
@@ -402,7 +408,7 @@ class BS_Form {
 				array( 'attr' => 'data-name', 'value' => 'attr-name' )
 			),
 			'help_block' => 'make sure to blah blah blah',
-			'echo' => true // if false then returns the field
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -418,7 +424,11 @@ class BS_Form {
 
 		if ( !empty( $args['options'] ) ) {
 			foreach ( $args['options'] as $option ) {
-				$checked = ( $option['value'] == $args['value'] ) ? ' checked="checked"' : '';
+				if ( !empty( $args['value'] ) ) {	
+					$checked = ( $option['value'] == $args['value'] ) ? ' checked="checked"' : '';
+				} else {
+					$checked = '';
+				}
 				$disabled = ( !empty( $option['disabled'] ) && ( $option['disabled'] === true ) ) ? ' disabled="disabled"' : '';
 				$radio .= '<div class="radio">';
 				$radio .= '<label for="' . $option['id'] . '">';
@@ -472,7 +482,7 @@ class BS_Form {
 				array( 'attr' => 'data-name', 'value' => 'attr-name' )
 			),
 			'help_block' => 'make sure to blah blah blah',
-			'echo' => true // if false then returns the field
+			'echo ' => true // if false then returns the field
 		)
 	 * @author Matthew Price
 	 * @access public
@@ -488,7 +498,11 @@ class BS_Form {
 
 		if ( !empty( $args['options'] ) ) {
 			foreach ( $args['options'] as $option ) {
-				$checked = ( $option['value'] == $args['value'] ) ? ' checked="checked"' : '';
+				if ( !empty( $args['value'] ) ) {
+					$checked = ( $option['value'] == $args['value'] ) ? ' checked="checked"' : '';
+				} else {
+					$checked = '';
+				}
 				$disabled = ( !empty( $option['disabled'] ) && ( $option['disabled'] === true ) ) ? ' disabled="disabled"' : '';
 				$checkbox .= '<div class="checkbox">';
 				$checkbox .= '<label for="' . $option['id'] . '">';
@@ -521,7 +535,7 @@ class BS_Form {
 				'name' => 'field_name',
 				'id' => 'field_id',
 				'value' => 'field_value' // if there is a value, it will be compared with options to determine selected
-				'echo' => true // if false then returns the field
+				'echo ' => true // if false then returns the field
 			)
 		)
 	 * @author Matthew Price
@@ -553,7 +567,7 @@ class BS_Form {
 				'id' => 'field_id',
 				'class' => 'btn btn-default',
 				'display' => 'Submit' // if there is a value, it will be compared with options to determine selected
-				'echo' => true // if false then returns the field
+				'echo ' => true // if false then returns the field
 			)
 		)
 	 * @author Matthew Price
