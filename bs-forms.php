@@ -7,15 +7,14 @@ class BS_Form {
 		$form_id = ( !empty( $extra['id'] ) ) ? ' id="' . $extra['id'] . '"' : '';
 		$form_class = ( !empty( $extra['class'] ) ) ? ' class="' . $extra['class'] . '"' : '';
 		$form_enctype = ( !empty( $extra['enctype'] ) ) ? ' enctype="' . $extra['enctype'] . '"' : '';
-
 		$form_tag  = '<form ';
 		$form_tag .= 'action="' . $action . '"';
-		$form_tag .= 'method="' . $method . '"';
+		$form_tag .= ' method="' . $method . '"';
 		$form_tag .= $form_id;
 		$form_tag .= $form_class;
 		$form_tag .= $form_enctype;
 		$form_tag .= '>';
-
+		
 		if ( !empty( $extra['echo'] ) && ( $extra['echo'] === false ) ) {
 			return $form_tag;
 		} else {
@@ -416,7 +415,7 @@ class BS_Form {
 	 * @return void
 	 */
 	public function radio( $args = array() ) {
-
+		
 		$radio = '';
 
 		$args['type'] = 'radio';
@@ -499,7 +498,11 @@ class BS_Form {
 		if ( !empty( $args['options'] ) ) {
 			foreach ( $args['options'] as $option ) {
 				if ( !empty( $args['value'] ) ) {
-					$checked = ( $option['value'] == $args['value'] ) ? ' checked="checked"' : '';
+					if ( is_array( $args['value'] ) ) {
+						$checked = ( in_array( $option['value'], $args['value'] ) ) ? ' checked="checked"' : '';
+					} else {
+						$checked = ( $option['value'] == $args['value'] ) ? ' checked="checked"' : '';
+					}
 				} else {
 					$checked = '';
 				}
@@ -545,7 +548,8 @@ class BS_Form {
 	 */
 	public function hidden( $args = array() ) {
 
-		$hidden = '<input type="hidden" name="' . $args['name'] . '" id="' . $args['id'] . '" value="' . ( !empty( $args['value'] ) ) ? $args['value'] : '' . '">';
+		$value = ( !empty( $args['value'] ) ) ? $args['value'] : '';
+		$hidden = '<input type="hidden" name="' . $args['name'] . '" id="' . $args['id'] . '" value="' . $value . '">';
 		if ( !empty( $args['echo'] ) && ( $args['echo'] === false ) ) {
 			return $hidden;
 		} else {
