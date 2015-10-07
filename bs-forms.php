@@ -291,8 +291,8 @@ class BS_Form {
 			'name' => 'field_name',
 			'id' => 'field_id',
 			'options' => array(
-				array( 'id' => 'option_id', 'value' => 'option_value' ),
-				array( 'id' => 'option_id', 'value' => 'option_value' )
+				array( 'value' => 'option_value', 'label' => 'Descriptive Text of Option' ),
+				array( 'value' => 'option_value', 'label' => 'Descriptive Text of Option' )
 			),
 			'value' => 'field_value' // if there is a value, it will be compared with options to determine selected
 			'label' => 'field_label',
