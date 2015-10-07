@@ -459,10 +459,10 @@ class BS_Form {
 			'name' => 'field_name',
 			'id' => 'field_id',
 			'options' => array(
-				array( 'id' => 'option_id', 'value' => 'option_value', 'disabled' => true/false ),
-				array( 'id' => 'option_id', 'value' => 'option_value' )
+				array( 'id' => 'option_id', 'value' => 'option_value', 'label' => 'Decriptive Text', disabled' => true/false ),
+				array( 'id' => 'option_id', 'value' => 'option_value', 'label' => 'Decriptive Text' )
 			),
-			'value' => 'field_value' // if there is a value, it will be compared with options to determine selected
+			'value' => 'field_value', // if there is a value, it will be compared with options to determine selected
 			'label' => 'field_label',
 			'label_attrs' => array( // add an additional class or id to the field label
 				'class' => 'label_class',
